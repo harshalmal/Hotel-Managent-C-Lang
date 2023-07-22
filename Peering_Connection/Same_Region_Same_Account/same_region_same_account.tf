@@ -10,15 +10,15 @@ terraform {
 
 provider "aws" {
     region     = "ap-south-1" 
-    access_key = "AKIA3YSURKKH5TIXGJJG"
-    secret_key = "bWQ7XW1tMvTx6l1ijFsqiJJj/iRUl3UuEzBbSQQD"
+    access_key = "Put your AWS Access Key"
+    secret_key = "Put your AWS Secret Key"
 }
 
 ########*********VPC Peering Configuration*********########
 
 ## For Same Region Same Account
 resource "aws_vpc_peering_connection" "vpc_peer_1_n_2_SRSA" {
-    peer_owner_id = "808704889487"   ## AWS Account ID for 1st VPC
+    peer_owner_id = "Put your AWA Account ID"   ## AWS Account ID for 1st VPC
     peer_vpc_id   = aws_vpc.main_vpc_2.id
     vpc_id        = aws_vpc.main_vpc_1.id
     ##peer_region = "ap-south-1"  ## mention location of 2nd VPC region
