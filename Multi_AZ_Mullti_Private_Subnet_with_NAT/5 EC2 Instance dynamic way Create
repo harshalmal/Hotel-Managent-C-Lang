@@ -1,0 +1,1 @@
+Create a ec2 instance module that creates 5 instances dynamically. Where each instances have different tag names based on the list input variable you pass
